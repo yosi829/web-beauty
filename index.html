@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Reseller Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">BeautyReseller</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#daftar">Daftar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Bangun Bisnis Beauty & Fashion Anda</h1>
+    <p>Gabung jadi reseller dan mulai hasilkan jutaan rupiah tiap bulan!</p>
+    <a href="#daftar" class="btn">Daftar Menjadi Reseller</a>
+  </div>
+</section>
+
+<!-- FORM PENDAFTARAN -->
+<section id="daftar" class="form-section">
+  <h2>Pendaftaran Mitra</h2>
+  <form id="resellerForm">
+    <input type="text" placeholder="Nama Lengkap" required>
+    <input type="text" placeholder="Kota" required>
+    <input type="tel" placeholder="No. WhatsApp" required>
+    <textarea placeholder="Alasan Bergabung"></textarea>
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+</section>
+
+<!-- PRODUK -->
+<section id="produk" class="produk-section">
+  <h2>Katalog Produk</h2>
+  <div class="produk-grid">
+
+    <div class="card">
+      <img src="assets/product1.jpg">
+      <h3>Serum Glow</h3>
+      <p class="retail">Rp150.000</p>
+      <p class="reseller">Rp100.000</p>
+      <button onclick="downloadImage('assets/product1.jpg')">Download Foto</button>
+    </div>
+
+    <div class="card">
+      <img src="assets/product2.jpg">
+      <h3>Lip Cream Matte</h3>
+      <p class="retail">Rp120.000</p>
+      <p class="reseller">Rp80.000</p>
+      <button onclick="downloadImage('assets/product2.jpg')">Download Foto</button>
+    </div>
+
+    <div class="card">
+      <img src="assets/product3.jpg">
+      <h3>Fashion Dress</h3>
+      <p class="retail">Rp250.000</p>
+      <p class="reseller">Rp180.000</p>
+      <button onclick="downloadImage('assets/product3.jpg')">Download Foto</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- TABEL KEUNTUNGAN -->
+<section class="profit-section">
+  <h2>Simulasi Keuntungan</h2>
+
+  <label>Jumlah Penjualan:</label>
+  <input type="number" id="qty" value="10">
+
+  <button onclick="hitungProfit()">Hitung</button>
+
+  <h3 id="result"></h3>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 BeautyReseller | Contact: admin@beauty.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
