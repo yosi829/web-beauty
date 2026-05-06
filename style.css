@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #ffc0cb, #fff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  border-radius: 5px;
+}
+
+/* FORM */
+.form-section {
+  padding: 50px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: pink;
+  border: none;
+  cursor: pointer;
+}
+
+/* PRODUK */
+.produk-section {
+  padding: 50px;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.retail {
+  text-decoration: line-through;
+  color: red;
+}
+
+.reseller {
+  color: green;
+  font-weight: bold;
+}
+
+/* PROFIT */
+.profit-section {
+  text-align: center;
+  padding: 50px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
